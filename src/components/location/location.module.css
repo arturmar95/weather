@@ -1,0 +1,16 @@
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.location > div {
+  padding: 10px 0;
+}
+
+.location > div > span {
+  font-weight: 600;
+}

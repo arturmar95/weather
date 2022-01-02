@@ -1,0 +1,40 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 160px;
+  padding: 10px;
+  font-size: 1.6rem;
+  color: var(--main-col);
+  background-color: var(--bg-col);
+  border-radius: 10px;
+  animation: 0.5s ease-in-out 0s forwards fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.temp {
+  padding: 0.6rem 0;
+  font-size: 2.8rem;
+}
+
+.date {
+  max-width: 160px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .block {
+    min-width: calc(100% - 20px);
+  }
+}

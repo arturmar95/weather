@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 20px;
+  width: 100%;
+}
+
+.header {
+  margin: 2rem 0 4rem;
+  font-size: 1.8rem;
+}

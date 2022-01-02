@@ -1,0 +1,61 @@
+:root {
+  --main-col: #ffffff;
+  --bg-col: #4ba3dd;
+  --text-col: #000000;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-col);
+  background-color: var(--bg-col);
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--main-col);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--main-col);
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: calc(100vw - 40px);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
